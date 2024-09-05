@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+
+<div class="relative flex items-center justify-center overflow-hidden rounded-lg shadow-lg" style="height: 403px; background-image: url('/images/takson.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+    <!-- Overlay (optional gradient to darken the background) -->
+    <div class="bg-opacity-60 absolute inset-0 bg-gradient-to-r from-black via-transparent to-black"></div>
+</div>
+
+<!-- Content on top of the background image (optional) -->
+<div class="z-10 relative text-center">
+    <h1 class="mb-6 text-5xl font-bold text-black">Welcome to My Website</h1>
+    <p class="mb-8 text-2xl text-black">Providing exceptional services to our clients.</p>
+    <button class="rounded-lg bg-blue-600 px-6 py-3 font-bold text-black hover:bg-blue-700">
+        Get Started
+    </button>
+</div>
+
+
+
+<!-- Features Section -->
+<section class="bg-gray-100 py-16">
+    <div class="grid-cols-1 container mx-auto grid gap-8 px-4 md:grid-cols-3">
+        <!-- Feature 1 -->
+        <div class="text-center">
+            <i class="fas fa-anchor mb-4 text-6xl text-blue-600"></i>
+            <h3 class="mb-2 text-2xl font-semibold">Reliable Services</h3>
+            <p class="text-gray-600">We offer reliable and high-quality services tailored to meet your needs.</p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="text-center">
+            <i class="fas fa-bolt mb-4 text-6xl text-yellow-500"></i>
+            <h3 class="mb-2 text-2xl font-semibold">Fast Delivery</h3>
+            <p class="text-gray-600">Our team ensures fast and efficient delivery of all projects.</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="text-center">
+            <i class="fas fa-check-circle mb-4 text-6xl text-green-600"></i>
+            <h3 class="mb-2 text-2xl font-semibold">Quality Assurance</h3>
+            <p class="text-gray-600">We guarantee the highest level of quality in everything we do.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="bg-gray-800 py-16 text-center text-white">
+    <h2 class="mb-4 text-4xl font-bold">Ready to get started?</h2>
+    <p class="mb-6 text-lg">Contact us today and let's build something amazing together.</p>
+    <a href="/contact" class="rounded-lg bg-white px-6 py-3 font-bold text-blue-600 hover:bg-gray-200">
+        Contact Us
+    </a>
+</section>
