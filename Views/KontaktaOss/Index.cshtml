@@ -2,68 +2,38 @@
     ViewData["Title"] = "Kontakta oss";
 }
 
-<!-- Hero Section -->
-<div class="relative flex items-center justify-center overflow-hidden shadow-lg" style="height: 575px; background-image: url('/images/background.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-    <!-- Overlay for gradient effect -->
-    <div class="bg-opacity-40 absolute inset-0 bg-gradient-to-r from-black via-transparent to-black"></div>
-
-    <!-- Main Heading for "Kontakta oss" -->
-    <div class="flex w-full flex-col items-center justify-center p-4 text-center text-white drop-shadow-2xl">
-        <h1 class="mb-4 text-5xl font-bold">Kontakta oss</h1>
-        <p class="text-xl font-bold text-white">Vi ser fram emot att höra från dig!</p>
-    </div>
-</div>
-
-<!-- Contact Form Section -->
-<section class="rounded-b-lg bg-gray-200 py-16 shadow-lg">
-    <div class="container mx-auto px-4">
-        <div class="mx-auto max-w-2xl rounded-lg bg-white p-8 shadow-lg">
-            <h2 class="mb-6 text-center text-4xl font-bold text-gray-800">Skicka ett meddelande</h2>
-            <form action="/KontaktaOss/Send" method="POST" class="space-y-6">
-                <!-- Name Input -->
+<section class="bg-gray-100 ">
+    <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
+        <div class="max-w-2xl lg:max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-extrabold text-gray-900">Kontaktuppgifter</h2>
+            <p class="mt-4 text-lg text-gray-500">Tveka inte att höra av dig!</p>
+        </div>
+        <div class="mt-16 lg:mt-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="rounded-lg overflow-hidden">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2003.0361122437714!2d11.880579315888432!3d57.93575197972611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464bb6c0d22605bb%3A0xe927c69cc4341f3c!2sKrontofta%20128%2C%2044496%20%C3%96dsm%C3%A5l%2C%20Stenungsunds%20kommun!5e0!3m2!1sen!2sus!4v1619524992238!5m2!1sen!2sus"
+                            width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
                 <div>
-                    <label for="name" class="mb-2 block text-sm font-medium text-gray-700">Ditt namn</label>
-                    <input type="text" id="name" name="name" class="block w-full rounded-lg border border-gray-300 bg-gray-100 p-3 text-sm text-gray-900 focus:ring-blue-500 focus:border-blue-500" placeholder="John Doe" required />
+                    <div class="max-w-full mx-auto rounded-lg overflow-hidden">
+                        <div class="px-6 py-4">
+                            <h3 class="text-lg font-medium text-gray-900">Vår Adress</h3>
+                            <p class="mt-1 text-gray-600">Krontofta 128, 44496 Ödsmål, Stenungsunds kommun</p>
+                        </div>
+                        <div class="border-t border-gray-200 px-6 py-4">
+                            <h3 class="text-lg font-medium text-gray-900">Öppettider</h3>
+                            <p class="mt-1 text-gray-600">Måndag - Fredag: 07:00 - 16:00</p>
+                            <p class="mt-1 text-gray-600">Lördag: Stängt</p>
+                            <p class="mt-1 text-gray-600">Söndag: Stängt</p>
+                        </div>
+                        <div class="border-t border-gray-200 px-6 py-4">
+                            <h3 class="text-lg font-medium text-gray-900">Kontakt</h3>
+                            <p class="mt-1 text-gray-600">E-post: info@takson.se</p>
+                            <p class="mt-1 text-gray-600">Telefon: 070-372 76 03</p>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Email Input -->
-                <div>
-                    <label for="email" class="mb-2 block text-sm font-medium text-gray-700">Din e-postadress</label>
-                    <input type="email" id="email" name="email" class="block w-full rounded-lg border border-gray-300 bg-gray-100 p-3 text-sm text-gray-900 focus:ring-blue-500 focus:border-blue-500" placeholder="example@mail.com" required />
-                </div>
-
-                <!-- Subject Input -->
-                <div>
-                    <label for="subject" class="mb-2 block text-sm font-medium text-gray-700">Ämne</label>
-                    <input type="text" id="subject" name="subject" class="block w-full rounded-lg border border-gray-300 bg-gray-100 p-3 text-sm text-gray-900 focus:ring-blue-500 focus:border-blue-500" placeholder="Vad gäller ditt ärende?" required />
-                </div>
-
-                <!-- Message Textarea -->
-                <div>
-                    <label for="message" class="mb-2 block text-sm font-medium text-gray-700">Ditt meddelande</label>
-                    <textarea id="message" name="message" rows="5" class="block w-full rounded-lg border border-gray-300 bg-gray-100 p-3 text-sm text-gray-900 focus:ring-blue-500 focus:border-blue-500" placeholder="Skriv ditt meddelande här..." required></textarea>
-                </div>
-
-                <!-- Submit Button -->
-                <div class="text-center">
-                    <button type="submit" class="w-full rounded-lg bg-blue-600 px-6 py-3 font-bold text-white hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none md:w-auto">
-                        Skicka meddelande
-                    </button>
-                </div>
-            </form>
-
-            @if (ViewBag.Message != null)
-            {
-                <div class="mt-4 alert alert-success">
-                    @ViewBag.Message
-                </div>
-            }
+            </div>
         </div>
     </div>
-</section>
-
-<!-- CTA Section -->
-<section class="bg-gray-700 py-16 text-center text-white">
-    <h2 class="mb-4 text-4xl font-bold">Eller kontakta oss direkt</h2>
-    <p class="mb-6 text-lg">Ring oss på <strong>070-123 45 67</strong></p>
 </section>
