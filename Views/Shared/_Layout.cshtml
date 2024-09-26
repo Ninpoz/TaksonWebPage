@@ -71,6 +71,18 @@
         <p>&copy; Powered by A.Bergman IT-Solutions.</p>
       
     </footer>
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButton = document.querySelector('[data-collapse-toggle="navbar-default"]');
+            const menu = document.getElementById('navbar-default');
+
+            toggleButton.addEventListener('click', function () {
+                menu.classList.toggle('hidden');
+                menu.classList.toggle('block');
+            });
+        });
+    </script>
 
 </body>
 </html>
