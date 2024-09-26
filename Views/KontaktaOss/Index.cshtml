@@ -19,7 +19,7 @@
     <div class="container mx-auto px-4">
         <div class="mx-auto max-w-2xl rounded-lg bg-white p-8 shadow-lg">
             <h2 class="mb-6 text-center text-4xl font-bold text-gray-800">Skicka ett meddelande</h2>
-            <form action="/send" method="POST" class="space-y-6">
+            <form action="/KontaktaOss/Send" method="POST" class="space-y-6">
                 <!-- Name Input -->
                 <div>
                     <label for="name" class="mb-2 block text-sm font-medium text-gray-700">Ditt namn</label>
@@ -51,6 +51,13 @@
                     </button>
                 </div>
             </form>
+
+            @if (ViewBag.Message != null)
+            {
+                <div class="mt-4 alert alert-success">
+                    @ViewBag.Message
+                </div>
+            }
         </div>
     </div>
 </section>
@@ -58,5 +65,5 @@
 <!-- CTA Section -->
 <section class="bg-gray-700 py-16 text-center text-white">
     <h2 class="mb-4 text-4xl font-bold">Eller kontakta oss direkt</h2>
-    <p class="mb-6 text-lg">Ring oss på <strong>070-123 45 67</strong> 
+    <p class="mb-6 text-lg">Ring oss på <strong>070-123 45 67</strong></p>
 </section>
